@@ -1,1 +1,1 @@
-# jstests
+# JavaScript tests and quirks
