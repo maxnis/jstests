@@ -27,8 +27,11 @@ $(document).ready(function () {
           {
             $("p").text("Number is invalid");
           }
-          var x = fib(num);
-          $("p").text(x).append("  =>  (" + fb.length + ")");
+          var total = 0;
+          for (var i = 1; i <= num; i++) {
+              total += fib(i);
+          }
+          $("p").text(total).append("  =>  (" + fb.length + ")");
         }
         catch(error) {
           $("p").text("Ooops: " + error.message);
